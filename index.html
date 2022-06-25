@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="header"><h2 class="header_title">Lucas Montana</h2></div>
+
+    <section class="section-about">
+      <img
+        class="about_img"
+        src="./assets/Lucas_main.png"
+        alt="Lucas Montana"
+      />
+
+      <div class="about_text">
+        <h4 class="about_title">Hey. I'm Lucas</h4>
+        <h4 class="about_title">And I'm a professional photographer</h4>
+        <img src="./assets/horizontal_line.png" alt="line" />
+        <h5 class="about_subtitle">
+          Curabitur blanit tempus porttitor. Vollis ac inceptos mollisestor
+          commodo luctus.
+        </h5>
+        <p class="about_text">
+          Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+          commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus,
+          porta ac consectetur ac, vestibulum at eros. Vestibulum id ligulas
+          semper. Cum sociis natoque penatibus et magnis maecenas. Donec
+          ullamcorper nulla non metus auctor fringilla.
+        </p>
+
+        <button class="about_btn">
+          <a class="about_link" href="#">Contact me</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal_bg">
+      <form class="modal">
+        <img src="./assets/cancel.png" class="close-modal" />
+        <h5 class="modal_title">Contact me</h5>
+        <p class="modal_subtitle">
+          Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+          commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus,
+          porta ac consectetur ac, vestibulum at eros.
+        </p>
+        <div class="modal_flex">
+          <label>
+            <input
+              class="modal-input_name"
+              type="text"
+              name="name"
+              placeholder="Your name..."
+            />
+          </label>
+          <label>
+            <input
+              class="modal-input_email"
+              type="email"
+              name="email"
+              placeholder="Your email..."
+            />
+          </label>
+        </div>
+        <label>
+          <textarea class="modal_textarea" name="message">
+            Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+            commodo luctus. Fu blandit tempus. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros. Vollis commodo luctus. Curabitur
+            blandit. Morbi leo risus, porta ac consectetur ac, at eros.
+        </textarea
+          >
+        </label>
+        <button class="modal_btn" type="submit">Send message</button>
+      </form>
+    </div>
+
+    <section class="section_portfolio">
+      <h5 class="portfolio_title">Portfolio</h5>
+      <p class="portfolio_subtitle">
+        Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+        commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus,
+        porta ac consectetur ac, vestibulum at eros.
+      </p>
+
+      <div class="portfolio_images">
+        <img class="porfolio_img" src="./assets/img_1.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_2.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_3.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_4.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_5.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_6.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_7.png" alt="" />
+        <img class="porfolio_img" src="./assets/img_8.png" alt="" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_main">
+        <img
+          class="footer_img"
+          src="./assets/lucas_footer.png"
+          alt="Lucas photo"
+        />
+        <div>
+          <h4 class="footer_title">Lucas Montana</h4>
+          <p class="footer_phone">+4 768 25 25 255</p>
+          <p class="footer_location">Poland, Warsaw</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_text">
+      <p class="footer-text_subtitle">
+        All rights reserved. “World Photos”, Inc
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

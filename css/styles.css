@@ -1,0 +1,305 @@
+.header {
+  background-color: #19849b;
+  height: 58px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header_title {
+  padding-top: 12px;
+}
+
+.section-about {
+  margin: 51px 0 104px 85px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.about_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about_subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about_text {
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about_btn {
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 82px;
+  margin-top: 30px;
+  background-color: #272a2f;
+  cursor: pointer;
+}
+
+.about_link {
+  color: #fff;
+  cursor: pointer;
+}
+
+.about_btn:hover {
+  background-color: #19849b;
+  border: none;
+  transition: 0.3s;
+}
+
+.section_portfolio {
+  color: #fff;
+}
+
+.portfolio_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-left: 85px;
+}
+
+.portfolio_subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  padding-left: 85px;
+}
+
+.portfolio_images {
+  margin-left: 85px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  /* column-gap: 20.35px; */
+  row-gap: 20.35px;
+
+  margin-bottom: 99px;
+}
+
+.footer {
+  height: 205px;
+  background-color: #19849b;
+  color: #fff;
+}
+
+.footer_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 42px;
+}
+
+.footer_img {
+  border-radius: 50%;
+  align-items: center;
+}
+
+.footer_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer_phone,
+.footer_location {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer_location {
+  font-size: 16px;
+}
+
+.footer-text_subtitle {
+  background-color: #16758a;
+  color: #fff;
+  height: 44px;
+  text-align: center;
+  padding-top: 17px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* Modal form */
+.modal_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(25, 132, 155, 0.3);
+  opacity: 0;
+  pointer-events: 0;
+  transition: 0.5s all;
+}
+
+.modal_bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: #272a2f;
+  height: 656px;
+  width: 586px;
+  padding: 30px;
+  transition: 0.5s all;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.close-modal {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal_title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.modal_subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+.modal_flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-input_name {
+  width: 200px;
+  height: 50px;
+  border: none;
+  text-align: center;
+}
+
+.modal-input_email {
+  width: 335px;
+  height: 50px;
+  border: none;
+  text-align: center;
+}
+
+.modal-input_name,
+.modal-input_email,
+.modal_textarea {
+  background-color: #324b53;
+}
+
+.modal_textarea {
+  width: 555px;
+  height: 219px;
+  display: block;
+  color: #fff;
+  border: none;
+  text-align: left;
+  padding: 16px 22px 0 22px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modal_btn {
+  width: 217px;
+  height: 50px;
+  margin-top: 26px;
+  border: 2px solid #fff;
+  background-color: #272a2f;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .header {
+    width: 900px;
+  }
+
+  .section-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_img {
+    width: 762px;
+    height: 355px;
+  }
+
+  .portfolio_images {
+    gap: 15px;
+  }
+
+  .porfolio_img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .footer,
+  .footer-text_subtitle {
+    width: 900px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about_img {
+    width: 341px;
+    height: 355px;
+  }
+
+  .about_title {
+    width: 341px;
+    height: 102px;
+  }
+
+  .about_subtitle {
+    width: 341px;
+    height: 144px;
+  }
+
+  .portfolio_images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer,
+  .footer-text_subtitle {
+    width: 375px;
+  }
+}
